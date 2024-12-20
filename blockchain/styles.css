@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1f2f;
+    color: #dcdfe6;
+    overflow: hidden;
+}
+
+#navigation-bar {
+    width: 150px;
+    height: 100vh;
+    background-color: #283046;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    gap: 20px;
+    color: #cdd4e0;
+}
+
+#game-container {
+    display: flex;
+    margin-left: 150px;
+    height: 100vh;
+    padding: 20px;
+    background-color: #23283e;
+    gap: 20px;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+#blockchain, #transaction-info {
+    flex: 1;
+    background-color: #394867;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    color: #e2e8f0;
+}
+
+#scrollable-blockchain, #scrollable-transactions {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #2a2f4a;
+    padding: 10px;
+    border-radius: 5px;
+    color: #cbd5e1;
+    box-sizing: border-box;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.action-button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #4c5a75;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #62799d;
+}
+
+.action-button.disabled {
+    background-color: #3b4358;
+    cursor: not-allowed;
+}
